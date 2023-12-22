@@ -1,3 +1,3 @@
 class Country < ApplicationRecord
-  has_many :division
+  has_many :divisions
 end

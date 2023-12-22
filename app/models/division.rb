@@ -1,4 +1,4 @@
 class Division < ApplicationRecord
   belongs_to :country
-  has_many :district 
+  has_many :districts
 end

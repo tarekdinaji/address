@@ -1,4 +1,4 @@
 class District < ApplicationRecord
   belongs_to :division
-  has_many :upozila 
+  has_many :upozilas
 end
