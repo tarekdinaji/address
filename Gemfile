@@ -79,3 +79,7 @@ gem "annotate", "~> 3.2"
 gem "byebug", "~> 11.1"
 
 gem "letter_opener", "~> 1.8"
+
+gem "active_model_serializers"
+
+gem 'net-http'

@@ -1,6 +1,6 @@
 require "test_helper"
 
-class DivisionTest < ActiveSupport::TestCase
+class CountriesControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
