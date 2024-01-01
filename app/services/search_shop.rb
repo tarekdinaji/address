@@ -12,7 +12,11 @@ class SearchShop
   private
 
   def sanitize_params
-    @search_params = @search_params.downcase
+    return if @search_params.blank?
+    #If in the begining of a method there is a return clause it is called "Guard clause", 
+    # you need to add a blank line after the guard clause
+    
+    @search_params = @search_params.downcase  
   end
 
   def search
