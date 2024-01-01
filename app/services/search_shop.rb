@@ -17,7 +17,8 @@ class SearchShop
 
   def search
     if @search_params.present?
-      result = ShopDetail.where("country_code ILIKE ?", @search_params)
+      result = ShopDetail.where("country_code ILIKE ?", @search_params).or(ShopDetail.where("country ILIKE ?", @search_params))
+
       raise ActiveRecord::RecordNotFound if result.empty?
       # this basically sends the default error code if it returns empty
       return result

@@ -2,7 +2,7 @@ class ShopDetailsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index 
-    @result = SearchShop.new(params[:country_code]).call
+    @result = SearchShop.new(params[:country]).call
 
     render json: @result
   end 
