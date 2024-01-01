@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   resources :countries
-  resources :shop_addresses
+  resources :shop_details
 
   root "countries#index"
 end

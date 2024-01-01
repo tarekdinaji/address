@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_26_184546) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_31_182515) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -36,11 +36,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_26_184546) do
     t.index ["country_id"], name: "index_divisions_on_country_id"
   end
 
-  create_table "shop_addresses", force: :cascade do |t|
+  create_table "shop_details", force: :cascade do |t|
+    t.string "shop_name"
     t.string "country"
-    t.string "state"
-    t.string "district"
+    t.string "address_line_1"
+    t.string "address_line_2"
     t.string "zipcode"
+    t.string "country_code"
+    t.string "google_map_location"
+    t.string "phone_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
